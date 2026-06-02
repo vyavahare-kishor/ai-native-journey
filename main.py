@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from database import Base, engine
-from routers import users
+from routers import users, ai
 
 # This creates tables — like `rails db:migrate` but auto
 Base.metadata.create_all(bind=engine)
@@ -8,6 +8,7 @@ Base.metadata.create_all(bind=engine)
 app = FastAPI(title="AI Native Journey API")
 
 app.include_router(users.router)
+app.include_router(ai.router)
 
 
 @app.get("/")
