@@ -32,7 +32,7 @@ Built with production architecture patterns from day one — not a tutorial thro
 - **Provider-agnostic AI layer** — swap LLM providers by editing one file
 - **UUID primary keys** — production-standard, no sequential ID leakage
 - **Partial updates** — PATCH only updates sent fields, leaves others untouched
-- **Duplicate detection** — 409 conflict on duplicate email
+- **Duplicate detection** — 409 conflict on duplicate email ID validation
 - **Auto Swagger UI** — interactive docs at `/docs`, zero config
 
 ---
@@ -112,13 +112,13 @@ data: [DONE]
 
 ```
 ┌────────────┐    ┌─────────────────────────────────┐
-│   Client   │───▶│           FastAPI App            │
+│   Client   │───▶│           FastAPI App           │
 └────────────┘    │                                 │
                   │  ┌──────────┐  ┌─────────────┐  │
                   │  │  Users   │  │   AI Chat   │  │
                   │  │  Router  │  │   Router    │  │
                   │  └────┬─────┘  └──────┬──────┘  │
-                  └───────┼───────────────┼──────────┘
+                  └───────┼───────────────┼─────────┘
                           │               │
               ┌───────────▼──┐    ┌───────▼────────┐
               │  PostgreSQL  │    │   AI Service   │
@@ -273,7 +273,7 @@ This project is part of an AI-native engineering portfolio:
 | Project | Description |
 |---------|-------------|
 | **ai-native-journey** (this) | FastAPI foundation — REST API + AI chat + streaming |
-| [**ai-pr-reviewer**](https://github.com/yourusername/ai-pr-reviewer) | AI-powered GitHub PR code reviewer — LLaMA + GitHub API |
+| [**ai-pr-reviewer**](https://github.com/vyavahare-kishor/ai-pr-reviewer) | AI-powered GitHub PR code reviewer — LLaMA + GitHub API |
 
 ---
 
@@ -292,4 +292,4 @@ Transitioning into AI-native engineering — building real systems with Python, 
 
 ## 📄 License
 
-MIT License — use it, fork it, build on it.
+MIT License — use it, fork it, and build on it.
