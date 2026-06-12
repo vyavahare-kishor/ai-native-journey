@@ -273,7 +273,7 @@ This project is part of an AI-native engineering portfolio:
 | Project | Description |
 |---------|-------------|
 | **ai-native-journey** (this) | FastAPI foundation — REST API + AI chat + streaming |
-| [**ai-pr-reviewer**](https://github.com/vyavahare-kishor/ai-pr-reviewer) | AI-powered GitHub PR code reviewer — LLaMA + GitHub API |
+| [**ai-pr-reviewer**](https://github.com/vyavahare-kishor/pr-code-reviewer) | AI-powered GitHub PR code reviewer — LLaMA + GitHub API |
 
 ---
 
